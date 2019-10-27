@@ -4,7 +4,6 @@ import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
 import HomepageContainer from './containers/HomepageContaienr';
-// import ArticleContainer from './containers/ArticleContainer';
 import * as serviceWorker from './serviceWorker';
 import 'antd/dist/antd.css';
 import './styles/index.less';

@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import _ from 'lodash';
 import { Layout } from 'antd';
 
 import { loadMarkdownFile } from './../actions/index';
@@ -21,7 +20,7 @@ class HomepageContainer extends React.Component {
     loadMarkdownFile();
   }
   render() {
-    const { articles, articlesOutline } = this.props;
+    const { articlesOutline } = this.props;
     return (
       <Layout className="layout">
         <Header id="homepage-header">

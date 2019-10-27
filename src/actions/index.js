@@ -37,29 +37,5 @@ export const loadMarkdownFile = () => {
         message: err,
       });
     });
-
-
-
-
-    // fetch(path)
-    // .then(data => {
-    //   return data.text();
-    // })
-    // .then(text => {
-    //   const obj = { type: actionTypes.LOAD_MARKDOWN_SUCCESS };
-    //   articles[actionName] = text;
-    //   articlesOutline[actionName] = text.substring(0,30);
-    //   dispatch({
-    //     type: actionTypes.LOAD_MARKDOWN_SUCCESS,
-    //     articles,
-    //     articlesOutline,
-    //   });
-    // })
-    // .catch((err) => {
-    //   dispatch({
-    //     type: actionTypes.LOAD_MARKDOWN_FAILURE,
-    //     message: err,
-    //   });
-    // });
   }
 }

@@ -26,7 +26,6 @@ class ArticleContainer extends React.Component {
     }
   }
   componentDidUpdate = (type) => {
-    console.log(type)
     if(type.type === "LOAD_MARKDOWN_REQUEST" && this.props.type !== type.type) {
       this.setState({
         inputEditValue: this.props.articles[this.state.currentUrl],
@@ -53,7 +52,6 @@ class ArticleContainer extends React.Component {
   render(){
     const { articles } = this.props;
     const { currentUrl, likeStatus, starStatus, linkStatus, inputLinkValue, editStatus, editingValue, inputEditValue } = this.state;
-    console.log(inputEditValue)
     return (
       <div>
         { articleHeader(`[Type] ${currentUrl}`, '') }
